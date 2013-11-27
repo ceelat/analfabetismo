@@ -1,0 +1,115 @@
+{
+  "bounds": [
+    -81.9361,
+    -4.2807,
+    -66.6651,
+    13.4965
+  ],
+  "center": [
+    -74.0479,
+    4.6969,
+    5
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "analfabetismo",
+    "fields": [
+      "Municipios",
+      "Deptos",
+      "Label"
+    ],
+    "template_teaser": "Municipio: <strong>{{{Municipios}}}</strong><br/>\nDepartamento: <strong>{{{Deptos}}}</strong><br/>\nTasa de Analfabetismo: <strong>{{{Label}}}</strong>"
+  },
+  "minzoom": 5,
+  "maxzoom": 10,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "geometry": "polygon",
+      "id": "analfabetismo",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Robin/Dropbox/Datos disponibles/Municipios_TasaDeAnalfabetismo_DANE_2005/Tasa de Analfabetismo Total (2005) Porcentaje de habitantes mayores de 15 a§os que no saben leer ni escribir.shp",
+        "id": "analfabetismo",
+        "project": "analfabetismo",
+        "srs": null,
+        "encoding": "CP819"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "analfabetismo",
+      "extent": [
+        -81.57757655605931,
+        -4.20327227516091,
+        -66.6472438209054,
+        13.393452373484921
+      ],
+      "advanced": {
+        "encoding": "CP819"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "id": "municipios",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Robin/Dropbox/Datos disponibles/Municipios_Limites_IGAC_2009/archive.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "municipios",
+      "extent": [
+        -81.57757655605931,
+        -4.20327227516091,
+        -66.6472438209054,
+        13.393452373484921
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "id": "depts",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Robin/Dropbox/Datos disponibles/Depts_Limites_IGAC_2009/Depts_Limites_IGAC_2009.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "name": "depts",
+      "extent": [
+        -81.57757655605931,
+        -4.20327227516091,
+        -66.6472438209054,
+        13.393452373484921
+      ],
+      "advanced": {}
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -81.57757655605931,
+        -4.20327227516091,
+        -66.6472438209054,
+        13.393452373484921
+      ],
+      "id": "bovinosporpersona",
+      "class": "",
+      "Datasource": {
+        "file": "/Users/Robin/Dropbox/Datos disponibles/Municipios_Inventario_Bovino_FEDEGAN/Bovinos_por_persona.shp"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "bovinosporpersona"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "Analfabetismo",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class='my-legend'>\n<div class='title'>Tasa de Analfabetismo</div>\n<div class='subtitle'>Porcentaje de habitantes mayores de 15 años </div>\n<div class='subtitle2'>que no saben leer ni escribir </div>\n<div class='scale'>\n  <ul class='labels'>\n    <li><span style='background:rgb(253, 212, 158);'></span><=10</li>\n    <li><span style='background:rgb(253, 187, 132);'></span>10,1 - 15</li>\n    <li><span style='background:rgb(252, 141, 89);'></span>15,1 - 20</li>\n    <li><span style='background:rgb(227, 74,51);'></span>20,1 - 30</li></br>\n    <li><span style='background:rgb(207, 47,21);'></span>30,1 - 80</li></br>\n    <li><span style='background:rgb(255, 255,255);'><span style='border-color: #aaaaaa;'></span>Sin Datos</li></br>\n  </ul>\n</div>\n<div class='source'>Fuente: <a href=\"#link to source\">DANE, 2005</a></div>\n</div>\n\n<style type='text/css'>\n  .wax-legend .title {\n    text-align: left;\n    font-weight: bold;\n    font-name: Comic Sans MS Regular;\n    font-size: 90%;\n    }\n .wax-legend .subtitle {\n    text-align: left;\n    font-size: 80%;\n    line-height: 85%\n    }\n .wax-legend .subtitle2 {\n    text-align: left;\n    font-size: 80%;\n    line-height: 85%\n    margin-bottom: 0px;\n    }\n.wax-legend .scale ul {\n    margin: 0;\n    padding: 0px;\n    float: left;\n    list-style: none;\n    }\n  .wax-legend .scale ul li {\n    display: block;\n    float: left;\n    width: 60px;\n    margin-bottom: 1px;\n    text-align: center;\n    font-size: 9px;\n    line-height: 12px;\n    list-style: none;\n    }\n  .wax-legend ul.labels li span {\n    height: 15px;\n    width: 60px;\n    border: 1px solid #848484;\n    }\n  .wax-legend ul li span {\n    display: block;\n    float: left;\n    }\n  .wax-legend .source {\n    font-size: 70%;\n    color: #999;\n    clear: both;\n\n    }\n  .wax-attribution a,\n  .wax-legend a {\n    color: #777;\n    }\n  .wax-legend {\n   max-width:1200px; !important;\n  }\n</style>"
+}
